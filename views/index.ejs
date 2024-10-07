@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sim Card Control Page</title>
+</head>
+<body>
+    <h1>Sim Action page</h1>  <!-- For input type I have selected "number" so I don't have to create addition error handling for the case where a user might enter a special or alphabetical character instead of numeric characters-->
+    <form action="/activate" method="post">
+    <input type="number" name="number" autofocus placeholder="<%= locals.error ? error :  'Enter the Phone number'%>">
+    <button type="submit">Activate</button>
+    </form>
+    <form action="/deactivate" method="post">
+        <input type="number" name="number" autofocus placeholder="<%= locals.error ? error :  'Enter the Phone number'%>">
+        <button type="submit">Deactivate</button>
+    </form>
+    <form action="/getDetails" method="get"></form>
+        <input type="number" name="number" autofocus placeholder="<%= locals.error ? error :  'Enter the Phone number'%>">
+        <button type="submit">Get Details</button>
+    </form>
+</body>
+</html>
