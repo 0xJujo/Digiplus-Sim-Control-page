@@ -10,12 +10,15 @@ A web application for activating and deactivating SIM cards, built with Node.js,
 
 ### Installation
 1. Clone the repository to your machine:
-   "git clone https://github.com/0xJujo/Digiplus-Sim-Control-page.git
-   cd sim-activation-deactivation"
+   ```
+   git clone https://github.com/0xJujo/Digiplus-Sim-Control-page.git
+   cd sim-activation-deactivation
 2. Install dependencies using the following command:
-   "npm install"
+   ```
+   npm install
 3. Setup database by copying sql commands from queries.sql to your pgadmin panel to setup the simDb database table.
 4. Start the server using:
-   "npm start"
+   ```
+   npm start
 5. Experience the website on:
    "http://localhost:3000/"
